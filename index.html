@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="PORSCHE HOUSE — 포르쉐 모델과 라이프스타일 컬렉션을 만나는 프리미엄 온라인 쇼룸">
+<meta name="theme-color" content="#090b0e">
+<title>PORSCHE HOUSE | Driven by Dreams</title>
+<style>
+:root{
+ --bg:#090b0e;--panel:#11151b;--panel2:#171d25;--line:#303943;--ink:#f3f5f7;
+ --muted:#a3abb5;--red:#d5001c;--red2:#ef233c;--silver:#d5d9de;--gold:#c9a65b;
+ --shadow:0 18px 48px #0008;--max:1220px
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,"Malgun Gothic","맑은 고딕",sans-serif}button,input{font:inherit}button{cursor:pointer}a{color:inherit;text-decoration:none}
+.wrap{width:min(var(--max),calc(100% - 44px));margin:auto}
+.promo{height:31px;background:#050607;color:#e4e7ea;text-align:center;font-size:11px;display:flex;align-items:center;justify-content:center;letter-spacing:.2px}.promo b{color:#f0c36a}
+header{position:sticky;top:0;z-index:30;background:#090b0eef;backdrop-filter:blur(14px);border-bottom:1px solid #ffffff15}
+.header-main{height:82px;display:flex;align-items:center;gap:28px}
+.brand{display:flex;align-items:center;gap:12px;min-width:220px}
+.crest{width:42px;height:48px;display:grid;place-items:center;position:relative;background:linear-gradient(145deg,#e6e8ea,#9da5ad 55%,#6c747e);clip-path:polygon(5% 0,95% 0,90% 68%,50% 100%,10% 68%);color:#10151c;font-family:Georgia,serif;font-size:24px;font-weight:bold;text-shadow:0 1px #fff8}
+.brand-name{font-size:24px;letter-spacing:3px;font-weight:800;line-height:1}.brand-name small{display:block;font-size:9px;font-weight:500;letter-spacing:3.5px;color:#b3bbc4;margin-top:7px}
+.search{height:42px;display:flex;flex:1;max-width:560px;border:1px solid #434c56;border-radius:3px;overflow:hidden}.search input{flex:1;min-width:0;background:transparent;border:0;outline:0;color:white;padding:0 15px;font-size:13px}.search button{width:48px;border:0;background:#202832;color:white;font-size:19px}
+.account{margin-left:auto;display:flex;align-items:center;gap:15px;white-space:nowrap;font-size:12px;color:#d0d5dc}.account button{background:none;color:inherit;border:0;padding:5px}.cart-pill{color:white;background:var(--red);border-radius:50%;padding:3px 7px;margin-left:3px;font-size:10px}
+nav{background:#11151b;border-top:1px solid #ffffff0b;border-bottom:1px solid #ffffff17}.nav{display:flex;align-items:center;gap:28px;min-height:44px;white-space:nowrap;overflow:auto;font-size:12px;color:#d8dde3}.nav a{padding:15px 0}.nav a:hover{color:#ff6577}.nav .active{color:white;border-bottom:2px solid var(--red)}.nav-points{margin-left:auto;color:#ff6a7d;font-weight:700}
+.hero{height:430px;position:relative;overflow:hidden;background:#080a0e}
+.hero-bg{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:opacity .9s}.hero-bg.active{opacity:1}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#06080df2 0%,#06080dbb 36%,#06080d22 72%,#06080d66 100%)}
+.hero-content{position:relative;z-index:2;padding-top:104px}
+.kicker{font-size:11px;letter-spacing:4px;color:#e3b9a8}.hero h1{font-family:Georgia,"Times New Roman",serif;font-weight:400;letter-spacing:1px;font-size:clamp(34px,4vw,54px);line-height:1.12;margin:17px 0 16px}.hero p{font-size:15px;line-height:1.7;color:#d0d5dc;margin:0 0 25px}
+.btn{border:1px solid #747e89;background:transparent;color:white;padding:11px 20px;border-radius:3px;font-size:12px;transition:.2s}.btn:hover{border-color:white;background:#ffffff10}.btn-red{border:1px solid var(--red);background:var(--red);color:white;padding:12px 22px;border-radius:3px;font-weight:700;font-size:12px}.btn-red:hover{background:#a90017}
+.hero-arrows{position:absolute;z-index:3;top:48%;left:0;right:0;display:flex;justify-content:space-between;padding:0 18px;pointer-events:none}.hero-arrows button{pointer-events:auto;border:1px solid #ffffff55;background:#07090dbb;color:white;border-radius:50%;width:39px;height:39px;font-size:23px}
+.dots{position:absolute;z-index:3;bottom:23px;left:50%;transform:translateX(-50%);display:flex;gap:8px}.dots button{width:7px;height:7px;border:0;border-radius:50%;padding:0;background:#ffffff77}.dots button.active{width:24px;border-radius:8px;background:var(--red)}
+.trust{position:relative;z-index:4;margin-top:-1px;background:#121820;border:1px solid #3a424b;border-radius:4px;display:grid;grid-template-columns:repeat(5,1fr);padding:17px 10px;box-shadow:var(--shadow)}
+.trust-item{display:flex;justify-content:center;align-items:center;gap:12px;border-right:1px solid #ffffff20}.trust-item:last-child{border:0}.trust-icon{font-size:23px;color:#d5dce4}.trust-item b{display:block;font-size:12px}.trust-item small{font-size:10px;color:#a9b1bb}
+.section{padding:42px 0 12px}.section-head{display:flex;align-items:end;gap:14px;margin-bottom:20px}.section-head h2{font-size:22px;letter-spacing:.4px;margin:0}.section-head p{font-size:11px;color:var(--muted);margin:0}.section-head .more{margin-left:auto;color:#d7dce2;font-size:11px}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:15px}.filter{min-width:74px;padding:8px 14px;background:#151b22;border:1px solid #303944;color:#b9c1ca;border-radius:3px;font-size:11px}.filter.active,.filter:hover{background:#e5e8eb;color:#151a20;border-color:#e5e8eb}
+.model-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}
+.car-card{border:1px solid #39424c;background:linear-gradient(180deg,#171d24,#0e1218);border-radius:4px;overflow:hidden;min-width:0;transition:.22s;cursor:pointer}
+.car-card:hover{transform:translateY(-4px);border-color:#aeb7c1;box-shadow:0 10px 28px #0008}
+.car-photo{height:136px;overflow:hidden;background:#202832}.car-photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}.car-card:hover .car-photo img{transform:scale(1.06)}
+.car-info{padding:12px 11px 13px}.car-info h3{font-size:15px;margin:0 0 4px}.trim{font-size:10px;color:#aeb7c0;min-height:15px}.price{color:#efb85b;font-size:13px;font-weight:700;margin:10px 0}.price small{font-size:10px;color:#b9c0c8;font-weight:400}.card-actions{display:flex;gap:6px}.card-actions button{flex:1;border:1px solid #5b6570;color:#e8ebee;background:transparent;border-radius:2px;padding:7px 2px;font-size:10px}.card-actions button:hover{border-color:var(--red);color:#ff8795}
+.feature{margin:28px 0 8px;border:1px solid #313b46;display:grid;grid-template-columns:1.08fr .92fr;min-height:240px;background:linear-gradient(100deg,#0a0d12,#171c23);overflow:hidden}
+.feature-img{min-height:240px;background-size:cover;background-position:center}.feature-copy{padding:30px 34px;display:flex;flex-direction:column;justify-content:center}.red-kicker{font-size:10px;letter-spacing:3px;color:#ff5368}.feature-copy h2{font-family:Georgia,serif;font-weight:400;font-size:30px;margin:12px 0}.feature-copy p{color:#b4bdc8;font-size:12px;line-height:1.8;margin:0 0 18px}
+.life-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.life-card{position:relative;height:142px;border:1px solid #35404a;overflow:hidden;background:#171c22}.life-card img{width:100%;height:100%;object-fit:cover;opacity:.7}.life-card span{position:absolute;bottom:12px;left:13px;font-size:13px;font-weight:700;text-shadow:0 2px 5px black}
+.members{padding:34px 0;background:#10151b;border-top:1px solid #ffffff14;border-bottom:1px solid #ffffff14;margin-top:36px}
+.member-head{display:flex;align-items:end;gap:13px;margin-bottom:18px}.member-head h2{margin:0;font-size:21px}.member-head p{color:#a9b2bd;font-size:11px;margin:0}
+.member-layout{display:grid;grid-template-columns:1fr 180px;gap:16px}.tiers{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}.tier{border:1px solid #444e59;border-radius:3px;background:linear-gradient(150deg,#202832,#12171e);padding:14px 12px;min-height:145px}.tier:nth-child(3){border-color:#9b7434;background:linear-gradient(150deg,#352817,#15130f)}.tier h3{font-size:12px;margin:0 0 9px;letter-spacing:1px}.tier .emblem{font-size:22px;color:#bfc7cf}.tier p{font-size:10px;color:#bbc2ca;line-height:1.9;margin:6px 0 0}.tier strong{font-size:11px;color:#efc26c}
+.welcome{border:1px solid #525b65;padding:14px 12px;text-align:center;display:flex;flex-direction:column;justify-content:center;background:#171e27}.welcome h3{font-size:12px;margin:0 0 10px}.welcome .gift{font-family:Georgia,serif;font-size:30px;color:#ed243c;font-weight:bold}.welcome small{color:#aeb8c3;font-size:10px;margin:5px 0 13px}
+.quick{background:#0c1117;border-bottom:1px solid #252d37}.quick-grid{display:grid;grid-template-columns:repeat(5,1fr);padding:19px 0;gap:12px}.quick-item{text-align:center;border-right:1px solid #ffffff1e}.quick-item:last-child{border:0}.quick-item b{display:block;font-size:11px}.quick-item small{font-size:10px;color:#a6b0bb}
+footer{background:#07090c;padding:34px 0 18px;color:#e0e4e8}.footer-grid{display:grid;grid-template-columns:1.25fr 1.3fr 1fr 1fr 1fr;gap:22px}.footer-logo{font-size:22px;letter-spacing:3px;font-weight:800}.footer-grid h4{font-size:12px;margin:0 0 13px}.footer-grid p,.footer-grid a{font-size:10px;line-height:1.9;color:#aab3bd}.footer-grid a{display:block}.social{font-size:16px;letter-spacing:7px;margin-top:14px}.copyright{border-top:1px solid #ffffff1b;margin-top:22px;padding-top:15px;display:flex;justify-content:space-between;color:#7f8994;font-size:10px}
+.backdrop{display:none;position:fixed;inset:0;background:#000b;z-index:80;align-items:center;justify-content:center;padding:18px}.backdrop.show{display:flex}.modal{width:min(570px,100%);max-height:90vh;overflow:auto;background:#121820;border:1px solid #48525e;box-shadow:0 25px 80px #000b;padding:24px;border-radius:5px}.modal-head{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #ffffff20;padding-bottom:13px;margin-bottom:18px}.modal-head h2{font-size:19px;margin:0}.close{border:1px solid #59636f;background:transparent;color:white;border-radius:50%;width:30px;height:30px;font-size:18px}
+.field{margin:13px 0}.field label{display:block;font-size:11px;color:#c2cbd4;margin-bottom:7px}.field input,.field select,.field textarea{width:100%;background:#090d12;color:#fff;border:1px solid #46515e;border-radius:3px;padding:11px;outline-color:#ef233c}.field textarea{min-height:76px;resize:vertical}.modal .btn-red{width:100%;margin-top:10px}.hint{font-size:10px;line-height:1.7;color:#9faab5}.notice{padding:12px;background:#1b2530;border-left:3px solid var(--red);font-size:11px;line-height:1.7;color:#d2d8df;margin:12px 0}
+.cart-row{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 0;border-bottom:1px solid #ffffff20;font-size:12px}.cart-row button{background:none;border:1px solid #56616d;color:white;padding:5px 8px;font-size:10px}.cart-total{display:flex;justify-content:space-between;font-size:16px;font-weight:700;margin:18px 0}.detail{display:grid;grid-template-columns:1fr 1fr;gap:17px}.detail img{width:100%;height:210px;object-fit:cover}.detail h3{margin:0 0 8px;font-size:18px}.detail p{font-size:11px;color:#b1bbc5;line-height:1.8}.detail-price{font-size:18px;color:#efc26c;font-weight:800;margin:12px 0}.detail-spec{display:grid;grid-template-columns:repeat(2,1fr);gap:7px;margin:12px 0}.spec{background:#1c242e;padding:9px;font-size:10px;color:#aeb8c3}.spec b{display:block;color:white;font-size:12px;margin-top:3px}
+@media(max-width:980px){.model-grid{grid-template-columns:repeat(3,1fr)}.car-photo{height:150px}.brand{min-width:180px}.nav{gap:18px}.footer-grid{grid-template-columns:repeat(3,1fr)}.member-layout{grid-template-columns:1fr}.welcome{min-height:140px}.tiers{grid-template-columns:repeat(5,1fr)}}
+@media(max-width:650px){.wrap{width:calc(100% - 26px)}.promo{font-size:9px}.header-main{height:auto;min-height:72px;flex-wrap:wrap;gap:12px;padding:10px 0}.brand{min-width:auto}.crest{width:34px;height:39px;font-size:19px}.brand-name{font-size:19px}.brand-name small{font-size:7px}.account{font-size:10px;gap:5px}.account .hide{display:none}.search{order:3;flex-basis:100%;max-width:none;height:38px}.nav{gap:18px;font-size:11px}.nav-points{margin-left:0}.hero{height:355px}.hero-content{padding-top:75px}.hero h1{font-size:36px}.hero p{font-size:13px}.hero-arrows{padding:0 8px}.trust{grid-template-columns:repeat(2,1fr);gap:14px;padding:14px 8px}.trust-item{justify-content:flex-start;padding-left:8px;border:0}.trust-item b{font-size:10px}.trust-item small{font-size:9px}.trust-item:last-child{grid-column:1/-1}.section{padding-top:32px}.section-head{flex-wrap:wrap}.section-head h2{font-size:19px}.section-head p{font-size:10px}.model-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.car-photo{height:135px}.car-info{padding:10px}.feature{grid-template-columns:1fr}.feature-img{min-height:170px}.feature-copy{padding:22px}.life-grid{grid-template-columns:repeat(2,1fr)}.member-head{flex-wrap:wrap}.tiers{grid-template-columns:repeat(2,1fr)}.tier:last-child{grid-column:1/-1}.quick-grid{grid-template-columns:repeat(2,1fr)}.quick-item{border:0}.footer-grid{grid-template-columns:repeat(2,1fr);gap:20px}.footer-grid>div:last-child{grid-column:1/-1}.copyright{flex-direction:column;gap:8px}.detail{grid-template-columns:1fr}.detail img{height:180px}}
+</style>
+</head>
+<body>
+<div class="promo">✦ 신규 회원 가입 시 <b>2,000P</b> 즉시 지급 · 포르쉐 라이프를 경험하세요</div>
+<header>
+ <div class="wrap header-main">
+  <a class="brand" href="#">
+   <span class="crest" aria-label="shield emblem">P</span>
+   <span class="brand-name">PORSCHE<small>HOUSE · ONLINE SHOWROOM</small></span>
+  </a>
+  <form class="search" id="searchForm"><input id="searchInput" placeholder="차량 모델, 키워드 검색"><button aria-label="검색">⌕</button></form>
+  <div class="account">
+   <button data-modal="loginModal">로그인</button><span>|</span>
+   <button class="hide" data-modal="joinModal">회원가입</button><span class="hide">|</span>
+   <button class="hide" data-modal="mypageModal">마이페이지</button>
+   <button data-modal="cartModal">♡ 견적함 <span class="cart-pill" id="cartCount">0</span></button>
+  </div>
+ </div>
+ <nav><div class="wrap nav">
+  <a class="active" href="#">HOME</a><a href="#models">전체 모델</a><a href="#models" data-filter-link="sports">스포츠카</a><a href="#models" data-filter-link="suv">SUV</a><a href="#models" data-filter-link="sedan">세단</a><a href="#models" data-filter-link="electric">전기차</a><a href="#exclusive">포르쉐 익스클루시브</a><a href="#membership">멤버십</a>
+  <span class="nav-points">MY POINT <b id="navPoints">0P</b></span>
+ </div></nav>
+</header>
+<section class="hero">
+ <div class="hero-bg active" style="background-image:url('img/hero.jpg')"></div>
+ <div class="hero-bg" style="background-image:linear-gradient(90deg,#06080de8,#06080d44),url('img/featured-911.jpg')"></div>
+ <div class="hero-bg" style="background-image:linear-gradient(90deg,#06080df2,#06080d22),url('img/exclusive.jpg')"></div>
+ <div class="wrap hero-content">
+  <div class="kicker">PORSCHE HOUSE · EST. STUTTGART</div>
+  <h1 id="heroTitle">DRIVEN BY DREAMS.<br>DEFINED BY PORSCHE.</h1>
+  <p id="heroDesc">꿈을 향한 열정, 포르쉐가 완성합니다.<br>나만의 드라이빙을 시작해 보세요.</p>
+  <a href="#models" class="btn-red">모델 둘러보기</a>
+ </div>
+ <div class="hero-arrows"><button id="prevSlide" aria-label="이전">‹</button><button id="nextSlide" aria-label="다음">›</button></div>
+ <div class="dots" id="dots"><button class="active"></button><button></button><button></button></div>
+</section>
+<div class="wrap trust">
+ <div class="trust-item"><span class="trust-icon">♢</span><span><b>공식 딜러 네트워크</b><small>공식 판매 및 상담 안내</small></span></div>
+ <div class="trust-item"><span class="trust-icon">◈</span><span><b>파이낸셜 서비스</b><small>다양한 금융 프로그램</small></span></div>
+ <div class="trust-item"><span class="trust-icon">⬡</span><span><b>5년 무상 보증</b><small>안심하고 즐기는 드라이빙</small></span></div>
+ <div class="trust-item"><span class="trust-icon">◎</span><span><b>전국 서비스 네트워크</b><small>어디서나 편리한 케어</small></span></div>
+ <div class="trust-item"><span class="trust-icon">⌕</span><span><b>맞춤 상담</b><small>나만의 포르쉐를 디자인</small></span></div>
+</div>
+
+<main>
+<section class="section wrap" id="models">
+ <div class="section-head"><h2>포르쉐 모델 라인업</h2><p>당신의 드라이빙을 완성할 모델을 선택하세요.</p><a class="more" href="https://www.porsche.com/korea/ko/models/" target="_blank" rel="noopener">공식 모델 보기 ↗</a></div>
+ <div class="filters" id="filters">
+  <button class="filter active" data-filter="all">전체</button><button class="filter" data-filter="sports">스포츠카</button><button class="filter" data-filter="electric">전기차</button><button class="filter" data-filter="sedan">세단</button><button class="filter" data-filter="suv">SUV</button>
+ </div>
+ <div class="model-grid" id="modelGrid"></div>
+</section>
+
+<section class="wrap feature" id="exclusive">
+ <div class="feature-img" style="background-image:url('img/featured-911.jpg')"></div>
+ <div class="feature-copy"><div class="red-kicker">ICON OF PERFORMANCE</div><h2>911 · THE ORIGINAL</h2><p>시대를 초월한 실루엣과 정교한 퍼포먼스. 오랜 전통과 혁신이 만나는 포르쉐의 상징, 911을 만나보세요.</p><div><button class="btn-red" onclick="showDetail('911')">911 자세히 보기</button> <a class="btn" href="https://www.porsche.com/korea/ko/models/911/" target="_blank" rel="noopener">공식 페이지 ↗</a></div></div>
+</section>
+
+<section class="section wrap">
+ <div class="section-head"><h2>PORSCHE EXCLUSIVE</h2><p>나만의 포르쉐를 완성하는 디테일</p><a class="more" href="#footer">컬렉션 보기 ↗</a></div>
+ <div class="life-grid">
+  <div class="life-card"><img src="img/model-911.jpg" alt="포르쉐 스포츠카"><span>SPORTS CARS</span></div>
+  <div class="life-card"><img src="img/model-taycan.jpg" alt="포르쉐 전기차"><span>E-PERFORMANCE</span></div>
+  <div class="life-card"><img src="img/model-cayenne.jpg" alt="포르쉐 SUV"><span>VERSATILITY</span></div>
+  <div class="life-card"><img src="img/model-macan.jpg" alt="포르쉐 라이프스타일"><span>PORSCHE LIFESTYLE</span></div>
+ </div>
+</section>
+
+<section class="members" id="membership"><div class="wrap">
+ <div class="member-head"><h2>포르쉐 멤버십 혜택</h2><p>등급에 따라 다양한 혜택과 포인트를 적립하세요.</p></div>
+ <div class="member-layout">
+  <div class="tiers">
+   <div class="tier"><div class="emblem">♢</div><h3>STANDARD</h3><strong>신규 회원</strong><p>· 구매 상담 1% 적립<br>· 생일 쿠폰<br>· 가입 2,000P 지급</p></div>
+   <div class="tier"><div class="emblem">♢</div><h3>SILVER</h3><strong>누적 500만P 이상</strong><p>· 구매 상담 2% 적립<br>· 정비 할인 5%<br>· 멤버 전용 이벤트</p></div>
+   <div class="tier"><div class="emblem">♢</div><h3>GOLD</h3><strong>누적 1,500만P 이상</strong><p>· 구매 상담 3% 적립<br>· 서비스 쿠폰 2회<br>· 익스클루시브 초대</p></div>
+   <div class="tier"><div class="emblem">♢</div><h3>PLATINUM</h3><strong>누적 3,000만P 이상</strong><p>· 구매 상담 4% 적립<br>· 서비스 쿠폰 3회<br>· 우선 상담</p></div>
+   <div class="tier"><div class="emblem">♢</div><h3>VIP</h3><strong>누적 5,000만P 이상</strong><p>· 구매 상담 5% 적립<br>· 전담 컨시어지<br>· 프라이빗 라운지 초대</p></div>
+  </div>
+  <aside class="welcome"><h3>신규 회원 혜택</h3><div class="gift">2,000P</div><small>가입 즉시 지급</small><button class="btn-red" data-modal="joinModal">회원가입 하기</button></aside>
+ </div>
+</div></section>
+
+<section class="quick"><div class="wrap quick-grid">
+ <div class="quick-item"><b>◉ 시승 신청</b><small>원하는 모델 시승 예약</small></div>
+ <div class="quick-item"><b>▤ 견적 상담</b><small>옵션 및 금융 상담 신청</small></div>
+ <div class="quick-item"><b>⌕ 재고 조회</b><small>전시장 차량 확인</small></div>
+ <div class="quick-item"><b>♧ 금융 상담</b><small>다양한 금융 프로그램</small></div>
+ <div class="quick-item"><b>☏ 고객센터</b><small>전문가 1:1 상담</small></div>
+</div></section>
+</main>
+
+<footer id="footer"><div class="wrap">
+ <div class="footer-grid">
+  <div><div class="footer-logo">PORSCHE</div><p>DRIVEN BY DREAMS.<br>당신의 열정을 위한 프리미엄 온라인 쇼룸.</p><div class="social">◎　◉　f　▷</div></div>
+  <div><h4>회사 정보</h4><p>포르쉐 하우스 온라인 쇼룸<br>본 페이지는 포트폴리오용 데모입니다.<br>실제 포르쉐 공식 판매점이 아닙니다.</p></div>
+  <div><h4>고객센터</h4><a href="#footer">상담 신청 안내</a><a href="#footer">자주 묻는 질문</a><a href="#footer">전시장 안내</a><a href="#footer">서비스 네트워크</a></div>
+  <div><h4>마이페이지</h4><a href="#" data-modal="mypageModal">관심 차량</a><a href="#" data-modal="cartModal">견적함</a><a href="#membership">멤버십 혜택</a></div>
+  <div><h4>브랜드</h4><a href="https://www.porsche.com/korea/ko/" target="_blank" rel="noopener">포르쉐 공식 홈페이지 ↗</a><a href="https://www.porsche.com/korea/ko/models/" target="_blank" rel="noopener">모델 라인업 ↗</a><a href="#exclusive">익스클루시브</a></div>
+ </div>
+ <div class="copyright"><span>© 2026 PORSCHE HOUSE — DEMO STOREFRONT. NOT AN OFFICIAL PORSCHE WEBSITE.</span><span>본 페이지의 차량 가격은 표시 기준일의 권장소비자가격 참고값입니다.</span></div>
+</div></footer>
+
+<!-- Account / cart / vehicle modals -->
+<div class="backdrop" id="loginModal"><div class="modal"><div class="modal-head"><h2>로그인</h2><button class="close">×</button></div><form id="loginForm"><div class="field"><label>이메일</label><input id="loginEmail" type="email" required placeholder="name@example.com"></div><div class="field"><label>비밀번호</label><input type="password" required placeholder="비밀번호"></div><button class="btn-red">로그인</button></form><p class="hint">시연용 로그인입니다. 입력 정보는 이 브라우저에 저장되지 않으며 실제 인증은 수행하지 않습니다.</p></div></div>
+<div class="backdrop" id="joinModal"><div class="modal"><div class="modal-head"><h2>PORSCHE HOUSE 회원가입</h2><button class="close">×</button></div><form id="joinForm"><div class="field"><label>이름</label><input id="joinName" required placeholder="이름"></div><div class="field"><label>이메일</label><input id="joinEmail" type="email" required placeholder="name@example.com"></div><div class="field"><label>비밀번호</label><input type="password" minlength="6" required placeholder="6자 이상"></div><button class="btn-red">가입하고 2,000P 받기</button></form><p class="hint">데모 회원가입입니다. 실제 서비스에서는 서버 인증, 개인정보 보호 및 비밀번호 보안 처리가 필요합니다.</p></div></div>
+<div class="backdrop" id="cartModal"><div class="modal"><div class="modal-head"><h2>나의 견적함</h2><button class="close">×</button></div><div id="cartItems"></div><div class="cart-total"><span>차량 합산 참고 금액</span><span id="cartTotal">0원</span></div><div class="notice">차량은 옵션 구성과 계약 조건에 따라 최종 가격이 달라집니다. 아래 버튼은 상담 신청 시연이며 실제 구매·결제 또는 딜러 전송은 이루어지지 않습니다.</div><button class="btn-red" id="consultBtn">선택 차량 상담 신청</button></div></div>
+<div class="backdrop" id="mypageModal"><div class="modal"><div class="modal-head"><h2>마이페이지</h2><button class="close">×</button></div><div id="myInfo"></div><h3 style="font-size:14px">관심 차량</h3><div id="myCars" class="hint">관심 차량이 없습니다.</div><button class="btn-red" id="logoutBtn">로그아웃</button></div></div>
+<div class="backdrop" id="detailModal"><div class="modal"><div class="modal-head"><h2>MODEL INFORMATION</h2><button class="close">×</button></div><div id="detailContent"></div></div></div>
+<div class="backdrop" id="consultModal"><div class="modal"><div class="modal-head"><h2>상담 신청</h2><button class="close">×</button></div><form id="consultForm"><div class="field"><label>이름</label><input id="consultName" required placeholder="이름"></div><div class="field"><label>연락 가능한 이메일</label><input type="email" id="consultEmail" required placeholder="name@example.com"></div><div class="field"><label>상담 희망 모델</label><select id="consultModel"></select></div><div class="field"><label>상담 내용</label><textarea id="consultMessage" placeholder="관심 트림, 옵션, 시승 희망일 등을 적어주세요."></textarea></div><button class="btn-red">상담 신청 완료 (데모)</button></form><p class="hint">시연 화면입니다. 입력 내용은 전송되지 않습니다.</p></div></div>
+
+<script>
+const cars=[
+ {id:"911",name:"911 Carrera GTS",family:"911",trim:"2027 · 가솔린 · 스포츠카",category:"sports",price:247300000,img:"img/model-911.jpg",power:"541 PS",zero:"3.0초",speed:"312 km/h",desc:"911의 전통적인 실루엣과 전동화 기술이 결합된 고성능 스포츠카."},
+ {id:"gt3",name:"911 GT3",family:"911",trim:"2027 · 가솔린 · 트랙 퍼포먼스",category:"sports",price:283000000,img:"img/model-718.jpg",power:"510 PS",zero:"3.4초",speed:"311 km/h",desc:"모터스포츠에서 이어진 정밀한 주행 감각과 자연흡기 엔진의 매력을 담은 모델."},
+ {id:"taycan",name:"Taycan",family:"Taycan",trim:"2027 · 전기 · 스포츠 세단",category:"electric",price:134600000,img:"img/model-taycan.jpg",power:"408 PS",zero:"4.8초",speed:"230 km/h",desc:"포르쉐 특유의 퍼포먼스와 전기 구동의 즉각적인 응답성을 결합한 전기 스포츠카."},
+ {id:"panamera",name:"Panamera 4",family:"Panamera",trim:"2027 · 가솔린 · 스포츠 세단",category:"sedan",price:184700000,img:"img/model-panamera.jpg",power:"360 PS",zero:"5.0초",speed:"270 km/h",desc:"장거리 주행의 편안함과 스포츠카의 역동성을 함께 추구하는 4인승 스포츠 세단."},
+ {id:"cayenne",name:"Cayenne",family:"Cayenne",trim:"2027 · 가솔린 · SUV",category:"suv",price:149900000,img:"img/model-cayenne.jpg",power:"360 PS",zero:"6.0초",speed:"248 km/h",desc:"넉넉한 공간과 포르쉐다운 주행 성능을 갖춘 럭셔리 SUV."},
+ {id:"macan",name:"Macan 4",family:"Macan",trim:"2027 · 전기 · SUV",category:"suv electric",price:112400000,img:"img/model-macan.jpg",power:"408 PS",zero:"5.2초",speed:"220 km/h",desc:"일상적인 활용성과 전기 퍼포먼스를 겸비한 컴팩트 전기 SUV."}
+];
+const won=n=>n.toLocaleString("ko-KR")+"원";
+let filter="all",cart=JSON.parse(localStorage.getItem("ph_cart")||"[]"),favorites=JSON.parse(localStorage.getItem("ph_favs")||"[]");
+let user=JSON.parse(localStorage.getItem("ph_user")||"null"),points=Number(localStorage.getItem("ph_points")||0);
+function save(){localStorage.setItem("ph_cart",JSON.stringify(cart));localStorage.setItem("ph_favs",JSON.stringify(favorites));localStorage.setItem("ph_user",JSON.stringify(user));localStorage.setItem("ph_points",String(points))}
+function getCar(id){return cars.find(c=>c.id===id)}
+function openModal(id){document.getElementById(id).classList.add("show");if(id==="cartModal")renderCart();if(id==="mypageModal")renderMyPage()}
+function closeModal(node){node.classList.remove("show")}
+function updateHeader(){document.getElementById("cartCount").textContent=cart.length;document.getElementById("navPoints").textContent=points.toLocaleString()+"P"}
+function renderCars(){
+ const q=(document.getElementById("searchInput").value||"").trim().toLowerCase();
+ const visible=cars.filter(c=>(filter==="all"||c.category.includes(filter))&&(!q||(c.name+" "+c.family+" "+c.trim).toLowerCase().includes(q)));
+ document.getElementById("modelGrid").innerHTML=visible.map(c=>`<article class="car-card" onclick="showDetail('${c.id}')"><div class="car-photo"><img src="${c.img}" alt="${c.name}" loading="lazy"></div><div class="car-info"><h3>${c.name}</h3><div class="trim">${c.trim}</div><div class="price">${won(c.price)} <small>부터</small></div><div class="card-actions"><button onclick="event.stopPropagation();showDetail('${c.id}')">자세히 보기</button><button onclick="event.stopPropagation();addCart('${c.id}')">견적 담기</button></div></div></article>`).join("");
+ if(!visible.length)document.getElementById("modelGrid").innerHTML='<p class="hint">검색 결과가 없습니다.</p>';
+}
+function setFilter(value){filter=value;document.querySelectorAll(".filter").forEach(b=>b.classList.toggle("active",b.dataset.filter===value));renderCars()}
+document.querySelectorAll(".filter").forEach(b=>b.addEventListener("click",()=>setFilter(b.dataset.filter)));
+document.querySelectorAll("[data-filter-link]").forEach(a=>a.addEventListener("click",()=>setFilter(a.dataset.filterLink)));
+document.getElementById("searchForm").addEventListener("submit",e=>{e.preventDefault();renderCars();document.getElementById("models").scrollIntoView({behavior:"smooth"})});
+document.getElementById("searchInput").addEventListener("input",renderCars);
+function addCart(id){if(!cart.includes(id))cart.push(id);save();updateHeader();toast("견적함에 차량을 추가했습니다.")}
+function removeCart(id){cart=cart.filter(v=>v!==id);save();updateHeader();renderCart()}
+function renderCart(){const host=document.getElementById("cartItems");if(!cart.length){host.innerHTML='<p class="hint">견적함이 비어 있습니다. 관심 차량을 추가해 보세요.</p>';document.getElementById("cartTotal").textContent=won(0);return}
+ host.innerHTML=cart.map(id=>{const c=getCar(id);return `<div class="cart-row"><span><b>${c.name}</b><br><small style="color:#aab4be">${c.trim}</small></span><b>${won(c.price)}</b><button onclick="removeCart('${id}')">삭제</button></div>`}).join("");
+ document.getElementById("cartTotal").textContent=won(cart.reduce((s,id)=>s+getCar(id).price,0))}
+function showDetail(id){const c=getCar(id);document.getElementById("detailContent").innerHTML=`<div class="detail"><img src="${c.img}" alt="${c.name}"><div><h3>${c.name}</h3><div class="hint">${c.trim}</div><div class="detail-price">${won(c.price)}부터</div><p>${c.desc}</p><div class="detail-spec"><div class="spec">최고 출력<b>${c.power}</b></div><div class="spec">0–100 km/h<b>${c.zero}</b></div><div class="spec">최고 속도<b>${c.speed}</b></div><div class="spec">구동 타입<b>${c.category.includes("electric")?"전기":"가솔린"}</b></div></div><button class="btn-red" onclick="addCart('${c.id}');closeModal(document.getElementById('detailModal'))">견적함에 담기</button></div></div><p class="hint">표시 가격은 국내 포르쉐 공식 페이지의 권장소비자가격 참고값입니다. 선택 사양, 취득세, 운송료 및 기타 비용은 별도이며 실제 판매 가격과 다를 수 있습니다.</p>`;
+ openModal("detailModal")}
+window.showDetail=showDetail;window.addCart=addCart;window.removeCart=removeCart;
+function renderMyPage(){document.getElementById("myInfo").innerHTML=user?`<div class="notice"><b>${user.name}</b>님 · ${user.tier} 등급<br>보유 포인트: ${points.toLocaleString()}P</div>`:'<p class="hint">로그인 후 이용할 수 있습니다.</p>';
+ document.getElementById("myCars").innerHTML=favorites.length?favorites.map(id=>{let c=getCar(id);return `<div class="cart-row"><span>${c.name}</span><button onclick="addCart('${id}')">견적함 담기</button></div>`}).join(""):'<p class="hint">관심 차량이 없습니다.</p>'}
+function toggleFav(id){favorites=favorites.includes(id)?favorites.filter(x=>x!==id):[...favorites,id];save();toast("관심 차량 목록을 업데이트했습니다.")}
+document.getElementById("consultBtn").addEventListener("click",()=>{if(!cart.length){toast("먼저 관심 차량을 견적함에 담아주세요.");return}document.getElementById("consultModel").innerHTML=cart.map(id=>`<option value="${id}">${getCar(id).name}</option>`).join("");closeModal(document.getElementById("cartModal"));openModal("consultModal")});
+document.getElementById("consultForm").addEventListener("submit",e=>{e.preventDefault();closeModal(document.getElementById("consultModal"));toast("상담 신청 시연이 완료되었습니다. 실제 전송은 되지 않았습니다.");e.target.reset()});
+document.getElementById("joinForm").addEventListener("submit",e=>{e.preventDefault();if(user){toast("이미 로그인된 데모 계정이 있습니다.");return}user={name:document.getElementById("joinName").value,email:document.getElementById("joinEmail").value,tier:"STANDARD"};points+=2000;save();updateHeader();closeModal(document.getElementById("joinModal"));e.target.reset();toast("가입 완료! 2,000P를 지급했습니다.")});
+document.getElementById("loginForm").addEventListener("submit",e=>{e.preventDefault();user={name:document.getElementById("loginEmail").value.split("@")[0],email:document.getElementById("loginEmail").value,tier:"STANDARD"};save();closeModal(document.getElementById("loginModal"));toast("데모 로그인 완료")});
+document.getElementById("logoutBtn").addEventListener("click",()=>{user=null;save();closeModal(document.getElementById("mypageModal"));toast("로그아웃했습니다.")});
+document.querySelectorAll("[data-modal]").forEach(b=>b.addEventListener("click",()=>{if(b.dataset.modal==="mypageModal")renderMyPage();openModal(b.dataset.modal)}));
+document.querySelectorAll(".close").forEach(b=>b.addEventListener("click",()=>closeModal(b.closest(".backdrop"))));
+document.querySelectorAll(".backdrop").forEach(b=>b.addEventListener("click",e=>{if(e.target===b)closeModal(b)}));
+function toast(msg){const t=document.createElement("div");t.textContent=msg;t.style.cssText="position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:#e4e7eb;color:#121820;padding:12px 18px;border-radius:3px;z-index:120;box-shadow:0 10px 35px #0009;font-size:12px";document.body.appendChild(t);setTimeout(()=>t.remove(),2200)}
+let slide=0;const heroBgs=[...document.querySelectorAll(".hero-bg")],dotBtns=[...document.querySelectorAll("#dots button")];
+const slideText=[["DRIVEN BY DREAMS.<br>DEFINED BY PORSCHE.","꿈을 향한 열정, 포르쉐가 완성합니다.<br>나만의 드라이빙을 시작해 보세요."],["THE ART OF<br>PERFORMANCE.","정교한 엔지니어링과 감각적인 디자인.<br>포르쉐의 퍼포먼스를 경험하세요."],["YOUR DREAM.<br>YOUR PORSCHE.","나만의 취향으로 완성하는 한 대의 포르쉐.<br>익스클루시브 옵션을 만나보세요."]];
+function setSlide(n){slide=(n+heroBgs.length)%heroBgs.length;heroBgs.forEach((el,i)=>el.classList.toggle("active",i===slide));dotBtns.forEach((el,i)=>el.classList.toggle("active",i===slide));document.getElementById("heroTitle").innerHTML=slideText[slide][0];document.getElementById("heroDesc").innerHTML=slideText[slide][1]}
+document.getElementById("prevSlide").onclick=()=>setSlide(slide-1);document.getElementById("nextSlide").onclick=()=>setSlide(slide+1);dotBtns.forEach((d,i)=>d.onclick=()=>setSlide(i));setInterval(()=>setSlide(slide+1),6000);
+renderCars();updateHeader();
+</script>
+</body>
+</html>
